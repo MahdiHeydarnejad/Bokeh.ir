@@ -10,7 +10,13 @@
 </head>
 <body>
 	<div class="container">
+		<div class="back-img"></div>
+		<div class="content-container">
 		
+		</div>
+		<footer class="footer-container">
+			
+		</footer>
 	</div>
-</body>
+</body>	
 </html>
