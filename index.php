@@ -9,8 +9,8 @@
 	<script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
+	<div class="back-img"></div>
 	<div class="container">
-		<div class="back-img"></div>
 		<div class="content-container">
 		
 		</div>

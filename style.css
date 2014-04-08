@@ -10,47 +10,22 @@
 }
 
 .container{
-	width            : 950px;
-	background-color : none;
-	margin           : 0 auto;
-	padding-top      : 1px;
-	min-height       : 500px;
+	position: relative;
 }
 
-body, html {
-	font-family      : "Helvetica Neue",sans-serif;
-	box-shadow       : 0 none;
-	background-color : rgb(192,163,52)
+.back-img{
+	position           : absolute;
+	top                : 0;
+	left               : 0;
+	right              : 0;
+	bottom             : 0;
+	background-image   : url('images/Home-Page.jpg');
+	background-size    : cover;
+	z-index            : -2;
+	background-repeat  : no-repeat;
 }
 
-div.player{
-
-}
-
-div.player button {
-	width            : 32px;
-	height           : 32px;
-	float            : right;
-	background-color : transparent;
-	border           : 0 none;
-}
-
-div.player button:focus{
-	outline:0 none;
-}
-
-div.player button#stop{
-	background-image : url('images/stop-32.png')
-}
-
-div.player button#play{
-	background-image : url('images/play-32.png')
-}
-
-div.player button#next{
-	background-image : url('images/right-32.png')
-}
-
-div.player button#pre{
-	background-image : url('images/left-32.png')
+.content-container{
+	position: absolute;
+	
 }
