@@ -9,6 +9,10 @@
 	float      : none !important;
 }
 
+html, body {
+	direction: rtl;
+}
+
 .container{
 	position: relative;
 }
@@ -26,6 +30,50 @@
 }
 
 .content-container{
-	position: absolute;
 	
+}
+
+footer.footer-container {
+	position         : absolute;
+	left             : 0;
+	bottom           : 0;
+	right            : 0;
+	min-height       : 70px;
+	background-image : url('images/footer.png');
+	z-index          : 1;
+	padding: 15px 0;
+}
+
+footer section.footer-content{
+	position : absolute;
+	left     : 20px;
+	right    : 20px;
+}
+
+section.footer-content nav {
+	float: right;
+}
+
+section.footer-content nav menu.main {
+
+}
+
+section.footer-content nav menu.main li {
+	float: right;
+	margin-left: 10px;
+	text-align: center !important;
+	display: block;
+}
+
+nav menu.main li a {
+	padding            :23px 3px 0 3px;
+	text-decoration    : none;
+	color              :#aaa;
+	text-align         : center !important;
+	display            : block;
+	background-image   : url('images/polygan.png');
+	background-repeat  : no-repeat;
+	background-position: top center;
+	background-size: 15px 12px;
+	font-size: 14px;
 }

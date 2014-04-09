@@ -10,13 +10,23 @@
 </head>
 <body>
 	<div class="back-img"></div>
-	<div class="container">
-		<div class="content-container">
-		
-		</div>
-		<footer class="footer-container">
-			
-		</footer>
+	<div class="content-container">
+	
 	</div>
+	<footer class="footer-container">
+		<section class="footer-content">
+
+			<nav>
+				<menu class="main">
+					<li><a href="" title="">صفحه اصلی</a></li>
+					<li><a href="" title="">درباره ما</a></li>
+					<li><a href="" title="">نمونه کار ها</a></li>
+					<li><a href="" title="">تعرفه ها</a></li>
+					<li><a href="" title="">تماس با ما</a></li>
+					<li class="clear"></li>
+				</menu>
+			</nav>
+		</section>
+	</footer>
 </body>	
 </html>
