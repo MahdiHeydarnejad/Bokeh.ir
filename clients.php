@@ -11,18 +11,18 @@
 <body>
 	<div class="back-img"></div>
 	<div class="content-container">
-		<section class="logo"><img src="images/logo3.png" alt="Bokeh"></section>
+		<div class="client-train"></div>
 	</div>
 	<footer class="footer-container">
 		<section class="footer-content">
 
 			<nav>
-				<span id="pointer"></span>
+				<span id="pointer" class="clients"></span>
 				<menu class="main">
-					<li class="active"><a href="" title="">صفحه اصلی</a></li>
+					<li><a href="" title="">صفحه اصلی</a></li>
 					<li><a href="" title="">درباره ما</a></li>
 					<li><a href="" title="">نمونه کار ها</a></li>
-					<li><a href="" title="">تعرفه ها</a></li>
+					<li class="active"><a href="" title="">برخی از مشتریان</a></li>
 					<li><a href="" title="">تماس با ما</a></li>
 					<li class="dashed">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </li>
 					<li class="clear"></li>
