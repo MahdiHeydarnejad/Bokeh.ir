@@ -8,6 +8,7 @@
 	border     : 0 none !important;
 	float      : none !important;
 	margin: 0 none !important;
+	display: block !important;
 }
 
 @font-face {
@@ -28,6 +29,10 @@ html, body {
 	font-family : 'vahid';
 }
 
+body * {
+	direction: rtl;
+}
+
 .container{
 	position : relative;
 }
@@ -44,20 +49,28 @@ html, body {
 	background-repeat  : no-repeat;
 }
 
-.content-container{
-	
+.back-img.contact {
+	background-image    : url('images/contactbg.jpg');
+	background-position : center;
+}
+
+.content-container {
+	width       : 950px;
+	margin      : 0 auto;
+	padding-top : 1px;
 }
 
 footer.footer-container {
-	position         : absolute;
-	left             : 0;
-	bottom           : 0;
-	right            : 0;
-	min-height       : 60px;
-	background-image : url('images/footer.png');
-	z-index          : 1;
-	padding          : 25px 0;
-	background-position: center;
+	position            : absolute;
+	left                : 0;
+	bottom              : 0;
+	right               : 0;
+	min-height          : 50px;
+	background-image    : url('images/footer.png');
+	z-index             : 1;
+	padding             : 25px 0;
+	background-position : center;
+	border-top          : 1px solid #e4b587;
 }
 
 footer section.footer-content{
@@ -98,7 +111,7 @@ nav menu.main li a {
 
 nav menu.main li:hover a,nav menu.main li.active a {
 	background-image : url('images/polyganhover.png');
-	color :rgb(245,210,172);
+	color            : rgb(245,210,172);
 }
 
 nav menu.main li.dashed {
@@ -107,7 +120,8 @@ nav menu.main li.dashed {
 	color     : #777;
 	font-size : 10px;
 	float     : none !important;
-	position  : absolute; z-index: -1;
+	position  : absolute; 
+	z-index   : -1;
 }
 
 nav span#pointer {
@@ -121,13 +135,333 @@ nav span#pointer {
 }
 
 nav span#pointer.clients {
-	right:233px;
+	right : 233px;
+}
+
+nav span#pointer.gallery {
+	right : 149px;
 }
 
 /****************************************  LOGO  **************************************/
 
 section.logo {
-	width             : 350px;
-	margin            : 120px auto 0;
-	min-height        : 350px;
+	width      : 350px;
+	margin     : 120px auto 0;
+	min-height : 350px;
+}
+
+/****************************************  CLIENTS  **************************************/
+
+.clients-container {
+	margin : 100px auto 0;
+	width  : 490px;
+}
+
+.clients-container div.clients-slideshow span {
+	width               : 27px;
+	height              : 350px;
+	opacity             : 0.7;
+	float               : left;
+	display             : block;
+	background-position : center;
+	background-repeat   : no-repeat;
+}
+
+.clients-container div.clients-slideshow {
+	margin-bottom : 20px;
+}
+
+.clients-container div.clients-slideshow span:hover{
+	opacity : 0.9;
+	cursor  : pointer;
+}
+
+span#right {
+	background-image : url('images/arrow-r.png');
+}
+
+span#left {
+	background-image : url('images/arrow-l.png');
+	margin-right     : 30px;
+}
+
+.logos-window {
+	width        : 390px;
+	overflow     : hidden;
+	position     : relative;
+	float        : left;
+	height       : 340px;
+	margin-right : 10px;
+}
+
+.clients-train {
+	width              : 10000px;
+	position           : absolute;
+	top                : 0;
+	left               : 0;
+	-webkit-transition : left 500ms;
+}
+
+.clients-train > div {
+	float : left;
+	width : 390px;
+}
+
+.clients-train div.client {
+	float               : left;
+	margin-right        : 30px;
+	margin-bottom       : 20px;
+	width               : 100px;
+	height              : 100px;
+	background-position : center center;
+	background-repeat   : no-repeat;
+	background-size     : contain;
+}
+
+ul.btns {
+	width         : 100px;
+	list-style    : none;
+	margin        : 0 auto;
+	margin-bottom : 20px;
+}
+
+ul.btns li {
+	background-image    : url('images/polygan.png');
+	background-repeat   : no-repeat;
+	background-position : center;
+	width               : 13px;
+	height              : 11px;
+	float               : left;
+	margin              : 8px;
+	display             : block;
+}
+
+ul.btns li.active,ul.btns li:hover {
+	background-image : url('images/polyganhover.png');
+}
+
+/*****************************************  GALLERY  ***********************************/
+
+div.gallery {
+	margin: 60px auto 0;
+	width: 640px;
+}
+
+.gallery-slide{
+	width: 640px;
+}
+
+.gallery-slide > * {
+	float: left;
+}
+
+.gallery-slide .left{
+	width              : 27px;
+	min-height         : 390px;
+	background-image   : url('images/arrow-l.png');
+	background-position: center;
+	background-repeat  : no-repeat;
+	margin-right: 40px;
+}
+
+.gallery-slide .right{
+	width              : 27px;
+	min-height         : 390px;
+	background-image   : url('images/arrow-r.png');
+	background-position: center;
+	background-repeat  : no-repeat;
+}
+
+ul.updown {
+	height: 390px;
+	width:13px;
+	display: block;
+	margin-right: 20px;
+}
+
+ul.updown li {
+	margin-bottom: 5px;
+	background-image: url('images/polygan.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 11px;
+}
+
+ul.updown li:hover,ul.updown li.active{
+	background-image: url('images/polyganhover.png');
+}
+
+.gallery-window {
+	width: 500px;
+	height: 390px;
+	overflow: hidden;
+	position: relative;
+	margin-right: 10px;
+}
+
+.gallery-window .gallery-train {
+	width              : 10000px;
+	position           : absolute;
+	top                : 0;
+	left               : 0;
+	-webkit-transition : all 500ms;
+}
+
+.gallery-window .gallery-train div.horizontals {
+	width  : 500px;
+	float  : left;
+	height : 780px; 
+}
+
+.gallery-window .gallery-train div.horizontals div.verticals{
+	width  : 500px;
+	height : 390px;
+}
+
+div.verticals img {
+	display : block;
+}
+
+div.verticals > div {
+	margin-bottom: 10px;
+}
+
+.gallery-window .gallery-train div.horizontals div.verticals img.port1 {
+	width  : 350px;
+	height : 200px;
+	float  : right;
+}
+
+.gallery-window .gallery-train div.horizontals div.verticals img.port2 {
+	width        : 140px;
+	height       : 200px;
+	margin-right : 360px;
+}
+
+.gallery-window .gallery-train div.horizontals div.verticals img.port3 {
+	width : 140px;
+	float : left;
+}
+
+div.verticals > div div.info {
+	margin-left : 150px;
+}
+
+div.verticals > div div.info h4 {
+	text-align : right;
+	font-size  : 20px;
+	color      : #222;
+}
+
+div.verticals > div div.info h4 span {
+	font-size : 17px;
+	color     : #333;
+}
+
+div.verticals > div div.info p{
+	font-size   : 15px;
+	line-height : 16px;
+	text-align  : justify;
+}
+
+div.verticals h3 {
+	font-size   : 25px;
+	color       : #000;
+	text-align  : center;
+	margin-top  : 20px;
+	text-shadow:0 1px #aaa;
+	font-weight : lighter;
+}
+
+
+div.gallery ul.hbtns {
+	width         : 100px;
+	list-style    : none;
+	margin        : 0 auto;
+	margin-bottom : 20px;
+}
+
+div.gallery ul.hbtns li {
+	background-image    : url('images/polygan.png');
+	background-repeat   : no-repeat;
+	background-position : center;
+	width               : 13px;
+	height              : 11px;
+	float               : left;
+	margin              : 8px;
+	display             : block;
+}
+
+div.gallery ul.hbtns li.active,ul.hbtns li:hover {
+	background-image : url('images/polyganhover.png');
+}
+
+/****************************************  CONTACT  ****************************************/
+
+div.contact-container {
+	margin : 100px auto;
+}
+
+.contact-ways {
+	width  : 600px;
+	margin : 0 auto;
+}
+
+.contact-ways form {
+	float       : right;
+	width       : 400px;
+	margin-left : 10px;
+	display     : block;
+}
+
+.contact-ways form > * {
+	display          : block;
+	background-color : #07090d;
+	width            : 390px;
+	border           : 0 none;
+	margin-bottom    : 7px;
+	font-size        : 13px;
+	color            : #e3b587;
+}
+
+form input.txt {
+	text-align : right;
+	padding    : 10px 10px 10px 0;
+}
+
+form textarea {
+	text-align : right;
+	padding    : 10px 10px 5px 0;
+	min-height : 120px;
+}
+
+form input.btn {
+	padding    : 10px 5px;
+	text-align : center;
+	width      : 400px;
+}
+
+form ::-webkit-input-placeholder {
+   color : #e3b587;
+}
+
+form :-moz-input-placeholder {
+   color : #e3b587;
+}
+
+form :-ms-input-placeholder {
+   color : #e3b587;
+}
+
+.contact-ways div.contact-info{
+	margin-right: 150px;
+}
+
+div.contact-info p {
+	color        :#e3b587;
+	font-size    : 15px;
+	line-height  : 16px;
+	text-align   : right;
+	margin-bottom: 8px;
+
 }
